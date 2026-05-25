@@ -1,0 +1,107 @@
+/* Block: columns-service */
+
+.columns-service {
+  padding: 0;
+}
+
+.columns-service h2 {
+  font-size: var(--heading-font-size-xl);
+  font-weight: 700;
+  font-family: var(--body-font-family);
+  line-height: 1.1;
+  letter-spacing: 0.2px;
+  color: var(--text-color);
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.columns-service h2::after {
+  content: "";
+  display: block;
+  width: 32px;
+  height: 4px;
+  background-color: rgb(254 212 4);
+  margin-top: 16px;
+}
+
+.columns-service p {
+  font-size: var(--body-font-size-m);
+  font-family: var(--body-font-family);
+  line-height: 1.5;
+  color: rgb(84 84 84);
+  margin-top: 16px;
+  margin-bottom: 0;
+}
+
+/* Mobile: stack vertically */
+.columns-service > div {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.columns-service > div > div {
+  order: 1;
+}
+
+.columns-service > div > .columns-service-img-col {
+  order: 0;
+}
+
+.columns-service > div > .columns-service-img-col img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+/* Store badge images inside links should not be full-width */
+.columns-service > div > .columns-service-img-col a img {
+  width: auto;
+  max-width: 150px;
+  border-radius: 0;
+  object-fit: contain;
+}
+
+/* CTA Button */
+.columns-service .button-container {
+  margin-top: 24px;
+}
+
+main .columns-service a.button:any-link {
+  background-color: rgb(235 83 5);
+  color: #fff;
+  padding: 18px 30px;
+  border: none;
+  border-radius: 12px;
+  font-size: var(--body-font-size-m);
+  font-weight: 700;
+  font-family: var(--body-font-family);
+  text-decoration: none;
+  display: inline-block;
+  white-space: nowrap;
+}
+
+main .columns-service a.button:hover,
+main .columns-service a.button:focus {
+  background-color: var(--link-hover-color);
+}
+
+/* Desktop: side-by-side layout */
+@media (width >= 900px) {
+  .columns-service > div {
+    flex-direction: row;
+    align-items: center;
+    gap: 24px;
+  }
+
+  .columns-service > div > div {
+    flex: 1;
+    order: unset;
+  }
+
+  .columns-service > div > .columns-service-img-col {
+    order: unset;
+  }
+}

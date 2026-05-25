@@ -1,0 +1,45 @@
+:root {
+  /* brand colors */
+  --background-color: #fff;
+  --text-color: #333;
+  --link-color: #e8430a;
+  --link-hover-color: #c93800;
+  --light-color: #fff9f3;
+  --dark-color: #feeddb;
+  --accent-color: #f57c00;
+  --overlay-background-color: #f5f5f5;
+
+  /* brand fonts */
+  --heading-font-family: "Roboto Slab", serif;
+  --body-font-family: "DM Sans", sans-serif;
+
+  /* body sizes */
+  --body-font-size-m: 16px;
+  --body-font-size-s: 14px;
+  --body-font-size-xs: 12px;
+
+  /* heading sizes */
+  --heading-font-size-xxl: 36px;
+  --heading-font-size-xl: 28px;
+  --heading-font-size-l: 24px;
+  --heading-font-size-m: 20px;
+  --heading-font-size-s: 18px;
+  --heading-font-size-xs: 16px;
+
+  /* spacing */
+  --section-padding: 30px;
+  --nav-height: 64px;
+  --breadcrumbs-height: 34px;
+  --header-height: var(--nav-height);
+}
+
+@media (width >= 900px) {
+  :root {
+    --heading-font-size-xxl: 32px;
+    --heading-font-size-xl: 28px;
+    --heading-font-size-l: 24px;
+    --heading-font-size-m: 24px;
+    --heading-font-size-s: 18px;
+    --heading-font-size-xs: 16px;
+  }
+}

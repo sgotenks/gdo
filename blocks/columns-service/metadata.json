@@ -1,0 +1,39 @@
+{
+  "variantName": "columns-service",
+  "baseBlock": "columns",
+  "version": "1.0.0",
+  "created": "2026-05-25T13:47:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://www.conad.it/hey-conad",
+    "originPage": "HeyConad app landing page",
+    "blockPosition": "middle"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "spacious",
+    "purpose": "service-feature",
+    "imagePattern": "large"
+  },
+  "contentPattern": {
+    "structure": "image + heading + paragraph + CTA",
+    "buttonCount": 1,
+    "imageCount": 1
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "service description sections",
+      "feature highlight sections with image and text",
+      "product detail sections with side-by-side layout"
+    ],
+    "notSuitableFor": [
+      "comparison tables",
+      "simple text-only layouts",
+      "grid-based card layouts"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["/hey-conad"],
+    "reuseCount": 1,
+    "lastUsed": "2026-05-25T13:47:00.000Z"
+  }
+}

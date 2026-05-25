@@ -1,0 +1,128 @@
+/* Block: hero-landing
+   Source: conad.it/hey-conad hero section
+   Layout: text left, image right on desktop; stacked on mobile */
+
+/* Full-width wrapper override */
+.hero-landing-wrapper {
+  max-width: 100% !important;
+  padding: 0 !important;
+}
+
+/* Block container */
+.hero-landing {
+  position: relative;
+  padding: 0 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Row structure: on mobile, stack image on top, text below */
+.hero-landing > div {
+  display: block;
+}
+
+/* H1 heading */
+.hero-landing h1 {
+  font-size: 32px;
+  font-weight: 500;
+  font-family: var(--heading-font-family);
+  line-height: 40px;
+  letter-spacing: 0.2px;
+  color: var(--text-color);
+  margin: 0 0 16px;
+}
+
+/* Description paragraph */
+.hero-landing > div:last-child p {
+  font-size: var(--body-font-size-m);
+  font-family: var(--body-font-family);
+  line-height: 24px;
+  color: rgb(84 84 84);
+  margin: 0;
+}
+
+/* Image cell (row 1) */
+.hero-landing > div:first-child {
+  margin-bottom: 24px;
+}
+
+.hero-landing > div:first-child > div p {
+  margin: 0;
+}
+
+.hero-landing > div:first-child picture {
+  display: block;
+  line-height: 0;
+}
+
+.hero-landing > div:first-child img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Text cell (row 2) */
+.hero-landing > div:last-child {
+  display: block;
+}
+
+.hero-landing > div:last-child > div {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Desktop layout: side by side */
+@media (width >= 900px) {
+  .hero-landing {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: stretch;
+    padding: 0 40px;
+    min-height: 352px;
+    max-width: 1440px;
+  }
+
+  /* Image cell (row 1) - takes ~55% on the right */
+  .hero-landing > div:first-child {
+    flex: 1 1 auto;
+    margin-bottom: 0;
+    position: relative;
+  }
+
+  .hero-landing > div:first-child > div {
+    height: 100%;
+  }
+
+  .hero-landing > div:first-child > div p {
+    height: 100%;
+  }
+
+  .hero-landing > div:first-child picture {
+    height: 100%;
+  }
+
+  .hero-landing > div:first-child img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  /* Text cell (row 2) - takes ~45% on the left */
+  .hero-landing > div:last-child {
+    flex: 0 0 auto;
+    width: 45%;
+    display: flex;
+    align-items: center;
+  }
+
+  .hero-landing > div:last-child > div {
+    justify-content: center;
+    padding-right: 40px;
+  }
+
+  /* Desktop heading size */
+  .hero-landing h1 {
+    font-size: 48px;
+    line-height: 56px;
+  }
+}
